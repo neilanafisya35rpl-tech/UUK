@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toko elektronik</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <header>
+        <h1>Toko Elektronik</h1>
+    </header>
+
+    <section class="produk">
+
+        <article class="produk">
+            <div class="gambar"><img src="hp.jpg" alt="hp"></div>
+            <h3>hp</h3>
+            <p>Rp 3.000.000</p>
+        </article>
+
+        <article class="produk">
+            <div class="gambar"><img src="laptop.jpg" alt="laptop"></div>
+            <h3>laptop</h3>
+            <p>Rp 5.000.000</p>
+        </article>
+
+        <article class="produk">
+            <div class="gambar"><img src="headphone.jpg" alt="headphone"></div>
+            <h3>headphone</h3>
+            <p>Rp 500.000</p>
+        </article>
+
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+
+        <h2>Form Pemesanan</h2>
+
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"
+        required minlength=" 3" maxlength="50">
+
+        <label for="hp">Nomor HP:</label>
+        <input type="tel" id="hp" name="hp"
+        required pattern="[0-9]{10,13}"
+        title="Isi 10 sampai 13 angka">
+
+        <label for="produk">Produk:</label>
+        <select id="produk" name="produk" required>
+            <option value="">-- Pilih --</option>
+            <option value="Kemeja">hp</option>
+            <option value="Kaos">laptop</option>
+            <option value="Hodie">headphone</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah"
+        required min="1" max="20">
+
+        <label>Metode Bayar:</label>
+
+        <div class="radio">
+            <input type="radio" id="transfer"
+            name="bayar" value="Transfer" required>
+            <label for="transfer">Transfer</label>
+
+            <input type="radio" id="cod"
+            name="bayar" value="COD">
+            <label for="cod">COD</label>
+
+            <input type="radio" id="Qris"
+            name="bayar" value="Qris">
+            <label for="Qris">Qris</label>
+        </div>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"
+        required minlength="10" maxlength="200"></textarea>
+
+        <button type="submit">Pesan</button>
+
+    </form>
+
+    <footer>
+        <p>Kontak Toko: 081234567890</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
